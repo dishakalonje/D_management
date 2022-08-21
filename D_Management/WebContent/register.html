@@ -1,0 +1,55 @@
+<html>
+<title>Registration</title>
+<head></head>
+<body bgcolor=lightblue >	
+<style>
+
+.main
+		{
+			height: 550px;
+			width: 100%;
+		}
+
+	.registerbtn 
+	{
+	  background-color: #4CAF50;
+	  color: white;
+	  padding: 12px 20px;
+	  margin: 8px 0;
+	  border: black;
+	  cursor: pointer;
+	  width: 10%;
+	  opacity: 0.9;
+	}
+	.registerbtn:hover {
+	  opacity: 1;
+	}
+	</style>
+<center>		
+<div class="main">
+<form action="register.jsp" method="post">  
+  <center>  <h1> <i>Registration Form</i> </h1> </center> 
+  
+<b>Name</b>  <br> <input type="text" name="name" placeholder= "Enter your name" required />    <br>  <br> 
+<b>Company Name</b>  <br> <input type="text" name="company" placeholder= "Enter your company" required />   <br>  <br> 
+<b>Email</b>  <br> <input type="email" name="email" placeholder= "Enter your email" required />   <br>  <br> 
+<b>Location</b>  <br> <input type="text" name="location" placeholder= "Enter your location" required />   <br>  <br> 
+
+<div>   
+<label><b>    Gender   </b></label>   <br>  <br> 
+<input type="radio" value="Male" name="gender" checked > Male   
+<input type="radio" value="Female" name="gender"> Female   
+<input type="radio" value="Other" name="gender"> Other     <br> 
+</div>   <br> 
+
+<b>Contact No.</b> <br> <input type="number" name="cno" placeholder="Contact no."  required>    <br>   <br> 
+
+<b>Address</b> <br>  <textarea cols="20" rows="4" name="address" placeholder="Address" required>  </textarea>    <br>  <br> 
+
+<button type="submit" class="registerbtn">Register</button>  
+</div>
+</form>
+</div>
+</center>
+</body>
+</html>
